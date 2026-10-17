@@ -1,0 +1,17 @@
+@use "../utilities/variables" as *;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: $fuente-principal;
+    background-color: $color-fondo-body;
+    color: $color-texto-blanco;
+    min-height: 100vh;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

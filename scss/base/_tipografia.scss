@@ -1,0 +1,24 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+h1, h2, h3, .titulo-principal {
+    font-family: $fuente-titulos;
+}
+.titulo-principal {
+    color: $color-rosa-titulo;
+    border: 2px solid $color-borde-titulo;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: $color-fondo-titulo;
+    font-size: 1.5rem;
+    text-align: center;
+    @include responder-a('tablet') {
+        font-size: 2rem;
+    }
+    @include responder-a('desktop') {
+        font-size: 2.5rem;
+    }
+}
+.figure-caption {
+    color: $color-caption;
+    font-size: 0.95rem;
+}

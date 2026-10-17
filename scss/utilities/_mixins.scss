@@ -1,0 +1,21 @@
+@use "variables" as *;
+// Mixin con parámetros para media queries
+@mixin responder-a($pantalla) {
+    @if $pantalla == 'tablet' {
+        @media (min-width: $bp-tablet) {
+            @content;
+        }
+    } @else if $pantalla == 'desktop' {
+        @media (min-width: $bp-desktop) {
+            @content;
+        }
+    }
+}
+// Mixin con parámetros para alinear elementos
+@mixin flex-centrado($direccion: row, $gap: 0) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}

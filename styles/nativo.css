@@ -1,0 +1,36 @@
+
+/* ====================================================
+   ESTILOS PERSONALIZADOS SOBRE BOOTSTRAP 5
+   ==================================================== */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1a1a1a;
+}
+h1, h2, h3, .titulo-principal {
+    font-family: 'Oswald', sans-serif;
+}
+.titulo-principal {
+    color: rgb(247, 170, 183);
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.tarjeta-custom {
+    background-color: rgba(130, 56, 56, 0.85);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tarjeta-custom:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.tarjeta-custom h2 {
+    color: rgb(247, 170, 183);
+}
+.figure-caption {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+

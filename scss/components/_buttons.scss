@@ -1,0 +1,22 @@
+@use "../utilities/variables" as *;
+// Placeholder base para extender
+%boton-base {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: $fuente-titulos;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+// Botón que usa @extend
+.btn-leer-mas {
+    @extend %boton-base;
+    background-color: $color-rosa-titulo;
+    color: #1a1a1a;
+    &:hover {
+        background-color: lighten($color-rosa-titulo, 10%);
+        transform: translateY(-2px);
+    }
+}

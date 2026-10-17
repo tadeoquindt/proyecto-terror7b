@@ -1,0 +1,27 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+.tarjeta-custom {
+    background-color: $color-tarjeta-fondo;
+    color: $color-texto-blanco;
+    border: 1px solid $color-tarjeta-borde;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    // Animación nativa
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    h2 {
+        color: $color-rosa-titulo;
+        margin-bottom: 0.8rem;
+    }
+    p {
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+    @include responder-a('tablet') {
+        padding: 1.5rem;
+    }
+}
